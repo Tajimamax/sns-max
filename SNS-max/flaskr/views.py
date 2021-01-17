@@ -81,7 +81,7 @@ def register():
         print(
             f'パスワード設定用URL: http://127.0.0.1:5000/reset_password/{token}'
         )
-        flash(f'パスワード設定用URL: http://127.0.0.1:5000/reset_password/{token}')
+        flash(f'パスワード設定用URL: https://sns-app-max.herokuapp.com/reset_password/{token}')
         return redirect(url_for('app.login'))
     return render_template('register.html', form=form)
 
